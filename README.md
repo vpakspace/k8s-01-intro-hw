@@ -95,7 +95,10 @@ Dashboard открывается на <https://127.0.0.1:10443> (сертифи�
 Команда из задания (`-n kube-system service/kubernetes-dashboard 10443:443`) в 1.35 не работает: такого сервиса
 в `kube-system` больше нет, входная точка — `kubernetes-dashboard-kong-proxy`.
 
-DASHBOARD_PLACEHOLDER
+Вход по токену из секрета `microk8s-dashboard-token` (Bearer token). Dashboard, All namespaces: 9 подов, 8 deployments,
+1 daemon set — всё `Running`:
+
+![Dashboard](img/05-dashboard.png)
 
 ## Что не совпало с текстом задания
 
