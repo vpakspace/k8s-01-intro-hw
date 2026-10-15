@@ -1,0 +1,2 @@
+X509v3 Subject Alternative Name: 
+    DNS:kubernetes, DNS:kubernetes.default, DNS:kubernetes.default.svc, DNS:kubernetes.default.svc.cluster, DNS:kubernetes.default.svc.cluster.local, IP Address:127.0.0.1, IP Address:10.152.183.1, IP Address:10.0.2.15, IP Address:172.19.0.1, IP Address:172.17.0.1, IP Address:172.18.0.1, IP Address:172.28.0.1, IP Address:FD17:625C:F037:2:3463:8547:FE98:5B1E, IP Address:FD17:625C:F037:2:A00:27FF:FEF5:F7E1

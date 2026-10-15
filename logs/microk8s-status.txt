@@ -1,0 +1,15 @@
+$ sudo microk8s status
+microk8s is running
+high-availability: no
+  datastore master nodes: 127.0.0.1:19001
+  datastore standby nodes: none
+addons:
+  enabled:
+    dashboard            # (core) The Kubernetes dashboard
+    dns                  # (core) CoreDNS
+    ha-cluster           # (core) Configure high availability on the current node
+    helm                 # (core) Helm - the package manager for Kubernetes
+    helm3                # (core) Helm 3 - the package manager for Kubernetes
+    metrics-server       # (core) K8s Metrics Server for API access to service metrics
+  disabled:
+    cert-manager         # (core) Cloud native certificate management

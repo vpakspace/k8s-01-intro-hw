@@ -1,0 +1,26 @@
+$ kubectl get pods -A
+NAMESPACE              NAME                                                    READY   STATUS    RESTARTS   AGE
+kube-system            calico-kube-controllers-676854dc5d-4l564                1/1     Running   0          2m45s
+kube-system            calico-node-gvjmx                                       1/1     Running   0          2m45s
+kube-system            coredns-78894c95f4-7qt7z                                1/1     Running   0          2m45s
+kube-system            metrics-server-65556bc7f8-hcs8k                         1/1     Running   0          2m21s
+kubernetes-dashboard   kubernetes-dashboard-api-546759fdbc-nvvqt               1/1     Running   0          2m15s
+kubernetes-dashboard   kubernetes-dashboard-auth-7c84fd657-kvpwn               1/1     Running   0          2m15s
+kubernetes-dashboard   kubernetes-dashboard-kong-78b7499b45-bp8jw              1/1     Running   0          2m15s
+kubernetes-dashboard   kubernetes-dashboard-metrics-scraper-594bbfb84b-jnfst   1/1     Running   0          2m15s
+kubernetes-dashboard   kubernetes-dashboard-web-7f7574785f-6nl6w               1/1     Running   0          2m15s
+
+$ kubectl get svc -n kubernetes-dashboard
+NAME                                   TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+kubernetes-dashboard-api               ClusterIP   10.152.183.82    <none>        8000/TCP   2m15s
+kubernetes-dashboard-auth              ClusterIP   10.152.183.92    <none>        8000/TCP   2m15s
+kubernetes-dashboard-kong-proxy        ClusterIP   10.152.183.129   <none>        443/TCP    2m15s
+kubernetes-dashboard-metrics-scraper   ClusterIP   10.152.183.236   <none>        8000/TCP   2m15s
+kubernetes-dashboard-web               ClusterIP   10.152.183.144   <none>        8000/TCP   2m15s
+
+$ kubectl port-forward -n kubernetes-dashboard service/kubernetes-dashboard-kong-proxy 10443:443
+Forwarding from 127.0.0.1:10443 -> 8443
+Forwarding from [::1]:10443 -> 8443
+Handling connection for 10443
+Handling connection for 10443
+Handling connection for 10443

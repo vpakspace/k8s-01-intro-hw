@@ -1,0 +1,21 @@
+$ kubectl get nodes
+NAME                   STATUS   ROLES    AGE     VERSION
+vladspace-virtualbox   Ready    <none>   2m49s   v1.35.6
+
+$ kubectl get nodes -o wide
+NAME                   STATUS   ROLES    AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION     CONTAINER-RUNTIME
+vladspace-virtualbox   Ready    <none>   2m49s   v1.35.6   10.0.2.15     <none>        Ubuntu 24.04.4 LTS   7.0.0-31-generic   containerd://2.1.6
+
+$ kubectl config get-contexts
+CURRENT   NAME       CLUSTER            AUTHINFO   NAMESPACE
+*         microk8s   microk8s-cluster   admin      
+
+$ kubectl cluster-info
+Kubernetes control plane is running at https://10.0.2.15:16443
+CoreDNS is running at https://10.0.2.15:16443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
+
+$ kubectl version --client
+Client Version: v1.37.1
+Kustomize Version: v5.8.1

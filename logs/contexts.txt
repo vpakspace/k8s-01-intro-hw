@@ -1,0 +1,2 @@
+CURRENT   NAME       CLUSTER            AUTHINFO   NAMESPACE
+*         microk8s   microk8s-cluster   admin      

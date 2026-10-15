@@ -1,0 +1,10 @@
+NAMESPACE              NAME                                                    READY   STATUS              RESTARTS   AGE
+kube-system            calico-kube-controllers-676854dc5d-4l564                0/1     ContainerCreating   0          67s
+kube-system            calico-node-gvjmx                                       1/1     Running             0          67s
+kube-system            coredns-78894c95f4-7qt7z                                0/1     ContainerCreating   0          67s
+kube-system            metrics-server-65556bc7f8-hcs8k                         1/1     Running             0          43s
+kubernetes-dashboard   kubernetes-dashboard-api-546759fdbc-nvvqt               0/1     ContainerCreating   0          37s
+kubernetes-dashboard   kubernetes-dashboard-auth-7c84fd657-kvpwn               0/1     ContainerCreating   0          37s
+kubernetes-dashboard   kubernetes-dashboard-kong-78b7499b45-bp8jw              0/1     Init:0/1            0          37s
+kubernetes-dashboard   kubernetes-dashboard-metrics-scraper-594bbfb84b-jnfst   1/1     Running             0          37s
+kubernetes-dashboard   kubernetes-dashboard-web-7f7574785f-6nl6w               0/1     ContainerCreating   0          37s
